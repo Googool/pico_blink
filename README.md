@@ -1,7 +1,14 @@
-# Blink <img align="right" width="100" height="100" src="images\logo.svg">
+# Library with *Blink* functions for the Pico <img align="right" width="100" height="100" src="images\logo.svg">
 
-> [!CAUTION]
-> Experimental library for testing submodules in another project.
+A collection of *blink* functions for the Raspberry Pi Pico that allows you to control the onboard (or external) LED in various ways.
+
+> [!NOTE]
+> An examples folder will be added in the future. This repository currently serves no specific purpose other than to assist in testing submodules for another [project](https://github.com/Googool/unknown).
+
+## Examples
+
+See the [examples](https://github.com/Googool/pico_blink/tree/main/examples) folder for sample programs that demonstrates how to use this library.
+
 
 ## License
 

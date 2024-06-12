@@ -3,9 +3,10 @@
 
 #include "pico/stdlib.h"
 
-void init_blink(uint gpio_pin);
-void blink(uint gpio_pin, uint32_t on_time_ms, uint32_t off_time_ms);
-void blink_n_times(uint gpio_pin, uint32_t on_time_ms, uint32_t off_time_ms, uint32_t n);
-void blink_faster_slower(uint gpio_pin, uint32_t start_time_ms, uint32_t end_time_ms, uint32_t increment, uint32_t decrement);
+void blink_toggle(uint pin);
+void blink_led(uint pin, uint delay_ms);
+void blink_led_times(uint pin, uint delay_ms, uint times);
+void blink_pulsate(uint pin, uint pulse_duration_ms);
+void blink_variable_speed(uint pin, uint min_delay_ms, uint max_delay_ms, uint step_ms);
 
-#endif /* BLINK_H */
+#endif // BLINK_H
