@@ -15,7 +15,7 @@ add_library(pico_blink INTERFACE)
 
 # Specify the source files for the library
 target_sources(pico_blink INTERFACE
-    ${CMAKE_CURRENT_LIST_DIR}/src/st7789.c
+    ${CMAKE_CURRENT_LIST_DIR}/src/blink.c
 )
 
 # Specify the include directories for the library
