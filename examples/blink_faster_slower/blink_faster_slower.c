@@ -6,7 +6,7 @@ const uint led_pin = 25;
 int main(void) {
   init_blink(led_pin);
   while (1) {
-    blink(led_pin, 1000, 250);
+    blink_faster_slower(led_pin, 1000, 100, 100, 100);
   }
 
   return 0;
