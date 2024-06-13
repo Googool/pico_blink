@@ -26,4 +26,5 @@ target_include_directories(pico_blink INTERFACE
 # Link the necessary libraries
 target_link_libraries(pico_blink INTERFACE
     pico_stdlib
+    hardware_pwm
 )
