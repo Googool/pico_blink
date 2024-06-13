@@ -11,20 +11,20 @@ project(pico_blink)
 pico_sdk_init()
 
 # Create the library target
-add_library(pico_blink INTERFACE)
+add_library(${PROJECT_NAME} INTERFACE)
 
 # Specify the source files for the library
-target_sources(pico_blink INTERFACE
+target_sources(${PROJECT_NAME} INTERFACE
     ${CMAKE_CURRENT_LIST_DIR}/src/blink.c
 )
 
 # Specify the include directories for the library
-target_include_directories(pico_blink INTERFACE
+target_include_directories(${PROJECT_NAME} INTERFACE
     ${CMAKE_CURRENT_LIST_DIR}/src/include
 )
 
 # Link the necessary libraries
-target_link_libraries(pico_blink INTERFACE
+target_link_libraries(${PROJECT_NAME} INTERFACE
     pico_stdlib
     hardware_pwm
 )
