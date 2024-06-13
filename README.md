@@ -3,7 +3,11 @@
 A collection of *blink* functions for the Raspberry Pi Pico that allows you to control the onboard (or external) LED in various ways.
 
 > [!NOTE]
-> An examples folder will be added in the future. This repository currently serves no specific purpose other than to assist in testing submodules for another [project](https://github.com/Googool/unknown).
+> This repository currently serves no specific purpose other than to assist in testing submodules for another [project](https://github.com/Googool/unknown).
+
+![Raspberry Pi Pico pinout](images/pico-pinout.png)
+
+According to the pinout of the Raspberry Pi Pico, the onboard LED is connected to the GP25 pin, which is also capable of doing Pulse-Width Modulation (PWM). This library includes a **pulsing** function, which can be found inside of the [examples](https://github.com/Googool/pico_blink/tree/main/examples) folder.
 
 ## Examples
 

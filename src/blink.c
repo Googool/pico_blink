@@ -21,8 +21,15 @@ void blink_led_pulse(uint pin, uint pulse_duration_ms) {
     pwm_config_set_clkdiv(&config, 4.0f);
     pwm_init(slice_num, &config, true);
 
-    for (int i = 0; i < pulse_duration_ms * 1000; i += 10) {
-      pwm_set_gpio_level(pin, i % 256);
-      sleep_us(10);
+    uint step_size = 10;
+
+    for (uint i = 0; i <= 255; ++i) {
+        pwm_set_gpio_level(pin, i);
+        sleep_us(step_size);
+    }
+
+    for (int i = 255; i >= 0; --i) {
+        pwm_set_gpio_level(pin, i);
+        sleep_us(step_size);
     }
 }
