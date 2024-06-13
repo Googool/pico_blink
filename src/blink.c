@@ -20,20 +20,19 @@ void blink_led_pulse(uint pin, uint pulse_duration_ms) {
 
   pwm_config config = pwm_get_default_config();
   pwm_config_set_clkdiv(&config, 4.0f);
-
-  pwm_set_wrap(slice_num, 255);
+  pwm_config_set_wrap(&config, 65535);
   pwm_init(slice_num, &config, true);
 
-  uint max_brightness = 255;
-  uint step_size = pulse_duration_ms * 1000 / (2 * max_brightness);
+  uint step_size = 129;
+  uint delay_us = 5000;
 
-  for (uint i = 0; i <= max_brightness; ++i) {
-    pwm_set_gpio_level(pin, i);
-    sleep_us(step_size);
+  for (uint duty_cycle = 0; duty_cycle < 65536; duty_cycle += step_size) {
+    pwm_set_gpio_level(pin, duty_cycle);
+    sleep_us(delay_us);
   }
 
-  for (int i = max_brightness; i >= 0; --i) {
-    pwm_set_gpio_level(pin, i);
-    sleep_us(step_size);
+  for (int duty_cycle = 65535; duty_cycle >= 0; duty_cycle -= step_size) {
+    pwm_set_gpio_level(pin, duty_cycle);
+    sleep_us(delay_us);
   }
 }
