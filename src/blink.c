@@ -23,16 +23,13 @@ void blink_led_pulse(uint pin, uint pulse_duration_ms) {
   pwm_config_set_wrap(&config, 65535);
   pwm_init(slice_num, &config, true);
 
-  uint step_size = 129;
-  uint delay_us = 5000;
-
-  for (uint duty_cycle = 0; duty_cycle < 65536; duty_cycle += step_size) {
+  for (uint duty_cycle = 0; duty_cycle < 65536; duty_cycle += 129) {
     pwm_set_gpio_level(pin, duty_cycle);
-    sleep_us(delay_us);
+    sleep_us(5000);
   }
 
-  for (int duty_cycle = 65535; duty_cycle >= 0; duty_cycle -= step_size) {
+  for (int duty_cycle = 65535; duty_cycle >= 0; duty_cycle -= 129) {
     pwm_set_gpio_level(pin, duty_cycle);
-    sleep_us(delay_us);
+    sleep_us(5000);
   }
 }
