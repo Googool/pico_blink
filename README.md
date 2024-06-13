@@ -5,6 +5,10 @@ A collection of *blink* functions for the Raspberry Pi Pico that allows you to c
 > [!NOTE]
 > This repository currently serves no specific purpose other than to assist in testing submodules for another Raspberry Pi Pico C/C++ SDK [project](https://github.com/Googool/unknown).
 
+## Quickstart 🚀
+
+*Something about cloning the repository or adding it with submodules*. [WIP]
+
 ![Raspberry Pi Pico pinout](images/pico-pinout.png)
 
 According to the pinout of the Raspberry Pi Pico, the onboard LED is connected to the GP25 pin, which is also capable of doing Pulse-Width Modulation (PWM). This library includes a **pulsing** function, which can be found inside of the [examples](https://github.com/Googool/pico_blink/tree/main/examples) folder.
