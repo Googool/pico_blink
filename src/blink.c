@@ -17,10 +17,11 @@ void blink_led(uint pin, uint delay_ms) {
 void blink_led_pulse(uint pin, uint pulse_duration_ms) {
   gpio_set_function(pin, GPIO_FUNC_PWM);
   uint slice_num = pwm_gpio_to_slice_num(pin);
-  uint channel = pwm_gpio_to_channel(pin);
 
   pwm_config config = pwm_get_default_config();
   pwm_config_set_clkdiv(&config, 4.0f);
+
+  pwm_set_wrap(slice_num, 255);
   pwm_init(slice_num, &config, true);
 
   uint max_brightness = 255;
