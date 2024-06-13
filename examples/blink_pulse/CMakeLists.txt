@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.13)
 
 # Set the name of the project
-project(blink_led_pulse)
+project(blink_pulse)
 
 # Add your source files here
 add_executable(${PROJECT_NAME}

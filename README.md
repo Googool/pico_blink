@@ -3,7 +3,7 @@
 A collection of *blink* functions for the Raspberry Pi Pico that allows you to control the onboard (or external) LED in various ways.
 
 > [!NOTE]
-> This repository currently serves no specific purpose other than to assist in testing submodules for another [project](https://github.com/Googool/unknown).
+> This repository currently serves no specific purpose other than to assist in testing submodules for another Raspberry Pi Pico C/C++ SDK [project](https://github.com/Googool/unknown).
 
 ![Raspberry Pi Pico pinout](images/pico-pinout.png)
 

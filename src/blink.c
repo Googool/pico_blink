@@ -14,7 +14,7 @@ void blink_led(uint pin, uint delay_ms) {
   sleep_ms(delay_ms);
 }
 
-void blink_led_pulse(uint pin, uint pulse_duration_ms) {
+void blink_pulse(uint pin, uint pulse_duration_ms) {
   gpio_set_function(pin, GPIO_FUNC_PWM);
   uint slice_num = pwm_gpio_to_slice_num(pin);
 

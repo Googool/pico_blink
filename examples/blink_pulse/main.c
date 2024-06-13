@@ -8,7 +8,7 @@ int main(void) {
   const uint LED_PIN = PICO_DEFAULT_LED_PIN;
   init_blink(LED_PIN);
   while (true) {
-    blink_led_pulse(LED_PIN, 1000);
+    blink_pulse(LED_PIN, 1000);
   }
 #endif
   return 0;
