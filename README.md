@@ -1,4 +1,4 @@
-# Library with *Blink* functions for the Pico <img align="right" width="100" height="100" src="images\logo.svg">
+# Library with *Blink* functions for the Pico <img align="right" width="100" height="100" src="images\icon.svg">
 
 A collection of *blink* functions for the Raspberry Pi Pico that allows you to control the onboard (or external) LED in various ways.
 
