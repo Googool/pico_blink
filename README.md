@@ -15,6 +15,8 @@ The onboard LED of the Raspberry Pi Pico is connected to the GP25 pin, which sup
 
 *Quickly show how to clone/build the library*.
 
+*Add links to the top part of the "Quickstart" with a place you can buy/see the development board*.
+
 ## Examples
 
 See the [examples](https://github.com/Googool/pico_blink/tree/main/examples) folder for sample programs that demonstrates how to use this library.
