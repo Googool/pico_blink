@@ -11,9 +11,9 @@ Getting started with this library is straightforward. The only hardware needed i
 
 ![Raspberry Pi Pico pinout](images/pico-pinout.png)
 
-The onboard LED of the Raspberry Pi Pico is connected to the GP25 pin, which supports Pulse-Width Modulation (PWM). This capability allows for more advanced functions beyond simple blinking, such as pulsing and other effects, which can be found in the [examples](https://github.com/Googool/pico_blink/tree/main/examples) directory.
-
 *Quickly show how to clone/build the library*.
+
+The onboard LED of the Raspberry Pi Pico is connected to the GP25 pin, which supports Pulse-Width Modulation (PWM). This capability allows for more advanced functions beyond simple blinking, such as pulsing and other effects, which can be found in the [examples](https://github.com/Googool/pico_blink/tree/main/examples) directory.
 
 *Add links to the top part of the "Quickstart" with a place you can buy/see the development board*.
 
