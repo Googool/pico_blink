@@ -6,7 +6,7 @@ project(blink_pulse)
 
 # Add your source files here
 add_executable(${PROJECT_NAME}
-    src/main.c
+    main.c
 )
 
 # Link the necessary libraries
